@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+        box-sizing: border-box;
+}
+  *{
+        font-family: "Ubuntu", sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image:linear-gradient(1000deg,rgba(0, 0, 0, 0.79) 40%,gold) ;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+    }
+    .container{
+    /* height: 100vh; */
+    /* background: red; */
+    width: 100%;
+    margin: auto;
+    }
+    header{
+    width: auto;
+    height: 100px;
+    background-color: rgba(170, 170, 170, 0.1);
+    border: 3px  solid transparent;
+    border-top: none;
+    transition: 1s;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+header:hover{
+    border-color: white;
+    background-color: rgba(170, 170, 170, 0.3);
+}
+nav{
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    justify-content: center;
+    /* width: 50%;
+    height: 20px; */
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+nav ul{
+    justify-content: end;
+    /* width: 40%; */
+    list-style: none;
+    display: flex;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+nav ul li{
+    margin: 2px;
+    /* background-color: aqua; */
+    font-size: 20px;
+}
+nav ul a{
+    color: silver;
+    text-decoration: none;
+    margin: 0 9px;
+}
+
+.sec1{
+    height: 60%;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+/* ---------------------------------- */
+.sec2{
+    width: 90%;
+    height:60% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-card{
+    width: 50%;
+    height: 50%;
+}
+.project-card .card{
+    background:rgba(225, 225,255,0.1);
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.7s;
+    border: 2px solid transparent;
+    position: relative;
+    animation: card 2s 1 linear;
+}
+@keyframes card {
+from{scale: 0; }
+to{scale: 1;}
+}
+.project-card .card:hover{
+    translate: 0px -10px ;
+    border-color: wheat;
+}
+.project-card .card img{
+    width: 150px;
+    height: 100px;
+    transition: 0.7s;
+}
+.project-card .card img:hover{
+    scale: 1.05;
+}
+.project-card .card a{
+    text-decoration: none;
+    color: black;
+}
+.project-card .card h3{
+    font-size: 30px;
+}
+/* ---------------------------------- */
+.lift{
+    width: 50%;
+    text-align: center;
+    /* background-color: aqua; */
+}
+.lift h2{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.lift h4{
+    padding: 20px;
+    margin: 50px;
+}
+.right{
+    width: 50%;
+    text-align: center;
+    margin: 60px;
+    padding:auto;
+    /* background-color: red; */
+}
+.right img{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+    transition: 2s;
+}
+.right img:hover{
+    position: relative;
+    scale: 1.2;
+    box-shadow: 1px 1px 50px 10px white;
+    rotate: 180deg;
+    transition: 1s;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px; */
+    background-color: rgba(170, 170, 170, 0.1);
+}
+.contact,.links{
+    margin: 20px;
+    /* padding: 10px; */
+    color: black;
+}
+footer ul{
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+}
+footer ul a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    transition: 0.7s;
+}
+footer ul a:hover{
+    border-color:white ;
+}
+footer ul a img{
+    width: 50px;
+    height: 30px;
+}
+
